@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div style="text-align: center; background-color: rgb(255, 255, 202)">
+        <p ><h1>Welkom bij de koffiewinkel</h1></p>
+        <br>
+        Wat wilt u drinken? <br>
+        <button id="koffieBtn">Koffie</button><br>
+        <br><br>
+    </div>
+    <div class='keuze2' style="display: none; text-align: center; background-color: rgb(255, 255, 98)">
+        <br>Warm of koud?<br>
+            <button id="warmekoffie">Warme koffie</button>
+            <button>Koude koffie</button><br><br><hr>
+    </div>
+    <div class="keuze2W" style="display: none;text-align: center; background-color: rgb(244, 244, 0);">
+        <br> Op welke temperatuur wilt u uw koffie?<br>
+        <button id='hetekoffie'>Hete koffie</button><br>
+        <button>luc warme koffie</button><br></p><br><hr>
+    </div>
+    <div class="foto" style="display: none;text-align: center">
+        <img src="https://st.depositphotos.com/1116685/3078/i/950/depositphotos_30783763-stockafbeelding-kop-warme-koffie.jpg">
+    </div>
+</body>
+
+<script>
+$("#koffieBtn").click(function(){
+    $(".keuze2").css("display", "block");
+});
+
+$("#warmekoffie").click(function(){
+    $(".keuze2W").css("display", "block");
+});
+
+
+$("#hetekoffie").click(function(){
+    $(".foto").css("display", "block");
+});
+</script>
+
+<style>
+button {
+    padding: 5px;
+    font-size: 15px;
+    box-shadow: 10px 10px 5px grey;
+}
+</style>
+
+</html>
